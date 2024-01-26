@@ -210,6 +210,20 @@ article .project-description p {
 	padding: 2rem;
 }
 
+.tags {
+	display: flex;
+	gap: .5rem;
+	flex-wrap: wrap;
+	margin-block-start: 1rem;
+}
+
+.tag {
+	font-size: 0.85rem;
+	border: 1px solid white;
+	border-radius: 20px;
+	padding: 0.5rem 1rem;
+}
+
 .footer {
 	margin-right: auto;
 	margin-left: auto;

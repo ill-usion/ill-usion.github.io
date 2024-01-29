@@ -85,9 +85,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         // Add the 'active' class to the corresponding navbar link
-        
+
         console.log(maxIntersectionRatio)
-        if (mostVisibleSection && maxIntersectionRatio > 0.5) {
+        if (mostVisibleSection /*&& maxIntersectionRatio > 0.1*/) {
             const link = document.querySelector(".links-container a[data-section='" + mostVisibleSection.id + "']");
             console.log(link);
             if (link) {

@@ -269,6 +269,14 @@ footer {
 	text-shadow: 0 0 2px #ffffffaf, 0 0 5px #ffffffaf;
 }
 
+.glow-on-hover {
+	transition: 230ms;
+}
+
+.glow-on-hover:hover {
+	box-shadow: 0 0 5px #333333af, 0 0 15px #666666af;
+}
+
 a {
 	text-decoration: none;
 }

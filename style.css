@@ -53,19 +53,22 @@ body {
 }
 
 .navbar {
+	width: 100%;
 	z-index: 10;
-	position: sticky;
-	top: 0;
+	position: fixed;
+	top: -500px;
 
 	display: flex;
 	justify-content: center;
 	padding: 1rem;
+	transition: top 230ms ease-in-out;
 }
 
 .links-container {
 	user-select: none;
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 	gap: 2.5rem;
 
 	padding-block: 1rem;
@@ -95,7 +98,7 @@ main {
 	animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 
 	user-select: none;
-	height: 90svh;
+	height: 100svh;
 	display: flex;
 	justify-content: center;
 
@@ -103,7 +106,7 @@ main {
 }
 
 section {
-	margin-block: 2rem;
+	/* margin-block: 2rem; */
 	padding-block: 2rem;
 }
 
@@ -148,7 +151,7 @@ article .project-description p {
 }
 
 .technology-category {
-	padding-inline: 3rem;
+	/* padding-inline: 3rem; */
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
@@ -158,8 +161,8 @@ article .project-description p {
 	display: flex;
 	gap: 1rem;
 	align-items: center;
+	flex-wrap: wrap;
 
-	width: 1fr;
 	padding: 1rem;
 	border-radius: 16px;
 	background-color: #333;

@@ -28,6 +28,15 @@ function handleParagraphIntersection(entries, observer) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+    const navbar = document.getElementById('navbar');
+    document.addEventListener('scroll', () => {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            navbar.style.top = "0";
+        } else {
+            navbar.style.top = "-500px";
+        }
+    });
+
     // Give all project images hover effects 
     const images = document.querySelectorAll('.project img');
     images.forEach(img => {
@@ -106,4 +115,21 @@ document.addEventListener('DOMContentLoaded', () => {
             observer.observe(section);
         }
     });
+
+    function calculateAge(birthday) {
+        var ageDifMs = Date.now() - birthday;
+        var ageDate = new Date(ageDifMs);
+
+        return Math.abs(ageDate.getUTCFullYear() - 1970);
+    }
+
+    const ageSpan = document.getElementById('age');
+    const experienceSpan = document.getElementById('experience-years');
+
+    const birthday = new Date(2006, 9, 24);
+    const startedProgrammingDate = new Date(2017, 0, 1);
+
+    ageSpan.textContent = calculateAge(birthday);
+    experienceSpan.textContent = calculateAge(startedProgrammingDate);
 });
+

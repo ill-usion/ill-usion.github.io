@@ -231,6 +231,10 @@ article .project-description p {
 	padding: 0.5rem 1rem;
 }
 
+#other-projects {
+	margin-block-start: 2rem;
+}
+
 .footer {
 	margin-right: auto;
 	margin-left: auto;
@@ -277,7 +281,7 @@ footer {
 	box-shadow: 0 0 5px #333333af, 0 0 15px #666666af;
 }
 
-a {
+.links-container a {
 	text-decoration: none;
 }
 

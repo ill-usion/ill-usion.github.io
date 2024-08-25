@@ -235,6 +235,10 @@ article .project-description p {
 	margin-block-start: 2rem;
 }
 
+.other-projects {
+	padding-left: 2rem;
+}
+
 .footer {
 	margin-right: auto;
 	margin-left: auto;

@@ -1,0 +1,38 @@
+@font-face {
+    font-family: Poppins;
+    src: url(/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: PoppinsBlack;
+    src: url(/fonts/Poppins-Black.ttf);
+}
+
+* {
+    font-family: Poppins;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100svh;
+    color: #e8e6e3;
+    /* background-color: #181a1b; */
+    background-color: #0b0b0c;
+}
+
+.scroller::-webkit-scrollbar {
+    display: none;
+}
+
+
+hr {
+    border-width: 1px;
+    border-color: black;
+    width: 90%;
+}
